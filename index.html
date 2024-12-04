@@ -499,6 +499,7 @@
                 </button>
 
               </div>
+            </label>
           </div>
         </form>
       </div>
@@ -508,7 +509,7 @@
 
   <!--Modal Window-->
 
-  <div class="backdrop is-open">
+  <div class="backdrop">
     <div class="modal">
 
       <button class="modal-btn" type="button">
@@ -552,39 +553,28 @@
 
         <div class="modal-form-field">
           <label class="modal-form-label" for="user-message"> Comment </label>
-          <textarea 
-          class="modal-form-message" 
-          type="text" 
-          name="user-message" 
-          id="user-message" 
-          placeholder="Text input"
-            required></textarea>
+          <textarea class="modal-form-message" type="text" name="user-message" id="user-message"
+            placeholder="Text input" required></textarea>
         </div>
 
         <div class="modal-form-egreement">
-          <input 
-          class="visually-hidden" 
-          type="checkbox" 
-          name="user-egreement" 
-          id="user-egreement"
-          checked
-          />
+          <input class="visually-hidden" type="checkbox" name="user-egreement" id="user-egreement" checked />
 
           <label class="modal-form-egreement-text" for="user-egreement">
             <span class="modal-form-checkbox">
-            <svg class="modal-form-checkbox-icon" width="10" height="8">
-              <use href="./images/icons.svg#icon-mark"></use>
-            </svg>
+              <svg class="modal-form-checkbox-icon" width="10" height="8">
+                <use href="./images/icons.svg#icon-mark"></use>
+              </svg>
             </span>
-            
-            I accept the terms and conditions of the 
-            <a href="#" class="modal-form-egreement-link">Privacy Policy</a> 
+
+            I accept the terms and conditions of the
+            <a href="#" class="modal-form-egreement-link">Privacy Policy</a>
           </label>
         </div>
 
-        
+
         <button class="button modal-form-btn" type="submit">Send</button>
-        
+
       </form>
     </div>
   </div>
