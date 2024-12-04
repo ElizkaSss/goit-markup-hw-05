@@ -498,6 +498,7 @@ a {
 }
 
 .socials-text-footer {
+    
     letter-spacing: 0.02em;
     color: #fff;
     font-weight: 500;
@@ -510,6 +511,7 @@ a {
 
 .footer-form-field {
     display: flex;
+    flex-direction: column;
 }
 
 .footer-form-label {}
