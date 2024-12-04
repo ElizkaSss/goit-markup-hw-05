@@ -59,11 +59,13 @@ a {
     color: #434455;
 }
 
+
 /*Styles Header*/
 
 .header {
     border-bottom: 1px solid #e7e9fc;
-    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08)
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+
 }
 
 .container {
@@ -294,14 +296,7 @@ a {
     margin-bottom: 8px;
 }
 
-.benefits-icon {
-    border: 1px solid #8e8f99;
-    border-radius: 4px;
-    width: 264px;
-    height: 112px;
-    background: #f4f4fd;
-    padding: 24px 100px;
-}
+.benefits-icon {}
 
 .benefits-title {
     margin-bottom: 8px;
@@ -489,18 +484,16 @@ a {
 
 .footer-socials {
     flex-direction: column;
+    margin-right: 80px;
 }
 
 .footer-socials-list {
     display: flex;
-    margin-top: 16px;
     gap: 16px;
-
 }
 
 .footer-link:hover,
-.footer-link:focus 
- {
+.footer-link:focus {
     background-color: #31d0aa;
 }
 
@@ -511,4 +504,314 @@ a {
     margin-bottom: 16px;
 }
 
-/* footer */
+.footer-contacts {}
+
+.footer-form {}
+
+.footer-form-field {
+    display: flex;
+}
+
+.footer-form-label {}
+
+
+.footer-form-wrapper {
+    display: flex;
+    margin: 0 auto;
+}
+
+.footer-form-input {
+    background: transparent;
+    width: 246px;
+    height: 40px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: 1.5px solid rgba(255, 255, 255, 1);
+    color: #fff;
+    transition: 300ms ease-in;
+    transition-property: border-color, box-shadow;
+    margin-right: 24px;
+}
+
+.footer-form-input:focus {
+    border-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 5.445px 5.445px 0px rgba(0, 0, 0, 0.03);
+}
+
+.footer-button {
+
+    background-color: rgba(77, 90, 229, 1);
+    border-radius: 4px;
+    border: transparent;
+    min-width: 165px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    padding: 8px 24px;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.footer-form-icon {
+    margin-left: 16px;
+}
+
+
+
+/*Section Modal Window */
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: 300ms ease-in-out;
+    transition-property: opacity, visibility;
+    transition-delay: 200ms;
+}
+
+.backdrop.is-open {
+
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+
+    transition-delay: 0ms;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translateX(-50%) translateY(-50%) scale(0.3);
+    opacity: 0;
+
+    width: 408px;
+    min-height: 584px;
+    padding: 24px;
+    border-radius: 4px;
+    background: #fafafa;
+    
+    transition: 200ms cubic-bezier(0.26, -0.22, 0.43, 1.47);
+    transition-property: opacity, transform;
+    transition-delay: 0ms;
+}
+
+.backdrop.is-open .modal {
+    transform: translateX(-50%) translateY(-50%) scale(0.8);
+    opacity: 1;
+    transition-delay: 300ms;
+}
+
+
+/* Modal Button X  */
+
+.modal-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    background-color: #E7E9FC;
+    border: 1px solid #0000001A;
+
+    border-radius: 50%;
+    transition: 300ms, ease-in;
+    transition-property: border-color, background-color;
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+    background-color: #404BBF;
+    fill: #FFFFFF;
+}
+
+.btn-icon {
+    position: absolute;
+    padding: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    stroke: #2E2F42;
+    transition: 300ms, ease-in;
+    transition-property: stroke;
+}
+
+
+/* Modal Text */
+
+.modal-caption {
+    width: 365px;
+    margin-top: 48px;
+    margin-bottom: 16px;
+    color: #2E2F42;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+
+
+/* Modal Form */
+
+.modal-form {}
+
+.modal-form-field {
+    margin-bottom: 8px;
+
+}
+
+.modal-form-label {
+    display: block;
+    margin-bottom: 4px;
+
+}
+
+.modal-form-wrapper {
+    position: relative;
+}
+
+.modal-form-input {
+    width: 100%;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    height: 40px;
+    border-radius: 4px;
+    padding: 11px 38px;
+    outline: transparent;
+
+    transition: 300ms ease-in;
+    transition-property: border-color;
+}
+
+.modal-form-input:active,
+.modal-form-input:focus {
+    border-color: #4D5AE5;
+}
+
+.modal-form-icon {
+    position: absolute;
+    padding: 3px 0px;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    stroke: #2E2F42;
+}
+
+.modal-form-input:focus+.modal-form-icon {
+    stroke: #4D5AE5;
+    fill: #4D5AE5;
+}
+
+.modal-form-message {
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    resize: none;
+    padding: 8px 16px;
+    outline: transparent;
+
+
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.02em;
+
+    transition: 300ms, ease-in;
+    transition-property: border-color;
+
+}
+
+.modal-form-message:focus {
+    border-color: #4D5AE5;
+}
+
+.modal-form-message::placeholder {
+    color: rgba(46, 47, 66, 0.4);
+}
+
+
+/* Modal Custom CheckBox */
+
+
+
+.modal-form-egreement {
+    margin-bottom: 24px;
+}
+
+.modal-form-egreement-text {
+    font-size: 12px;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+    user-select: none;
+}
+
+.modal-form-checkbox {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+    margin-top: 8px;
+
+    width: 16px;
+    height: 16px;
+
+    cursor: pointer;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+
+    transition: 150ms ease-in;
+    transition-property: background-color;
+
+}
+
+input[type="checkbox"]:checked+.modal-form-egreement-text>.modal-form-checkbox {
+    background-color: #4D5AE5;
+    border-color: transparent;
+}
+
+.modal-form-checkbox-icon {}
+
+input[type="checkbox"]:focus-visible+.modal-form-egreement-text>.modal-form-checkbox {
+    outline: 2px solid #4D5AE5;
+    outline-offset: 2px;
+}
+
+
+.modal-form-egreement-link {
+    color: #4D5AE5;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+
+
+/* Modal Button */
+
+.modal-form-btn {
+    display: block;
+    margin: 0 auto;
+}
+
+/*  */
