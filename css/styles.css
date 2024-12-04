@@ -502,34 +502,40 @@ a {
     letter-spacing: 0.02em;
     color: #fff;
     font-weight: 500;
+    line-height: 1.5;
+    font-size: 16px;
     margin-bottom: 16px;
 }
 
+/* Section Footer Form */
+
 .footer-contacts {}
 
-.footer-form {}
-
-.footer-form-field {
+.footer-form {
     display: flex;
-    flex-direction: column;
+    gap: 24px;
 }
+
+
 
 .footer-form-label {}
 
 
-.footer-form-wrapper {
-    display: flex;
-    margin: 0 auto;
-}
 
 .footer-form-input {
-    background: transparent;
-    width: 246px;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+
+    width: 264px;
     height: 40px;
+
     padding: 8px 16px;
     border-radius: 4px;
-    border: 1.5px solid rgba(255, 255, 255, 1);
+    border: 1px solid#ffffff;
     color: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     transition: 300ms ease-in;
     transition-property: border-color, box-shadow;
     margin-right: 24px;
