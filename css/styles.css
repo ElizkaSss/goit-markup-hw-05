@@ -804,8 +804,7 @@ a {
     fill: transparent;
 }
 
-input[type='checkbox']:
-+ .modal-form-egreement-text 
+input[type='checkbox']:.modal-form-egreement-text 
   .modal-form-checkbox {
     background-color: #404bbf;
     border: none;
