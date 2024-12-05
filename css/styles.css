@@ -804,12 +804,7 @@ a {
     fill: transparent;
 }
 
-input[type='checkbox']:.modal-form-egreement-text 
-  .modal-form-checkbox {
-    background-color: #404bbf;
-    border: none;
-    fill: #F4F4FD;
-}
+
 
 .modal-form-checkbox-icon {}
 
@@ -818,6 +813,9 @@ input[type='checkbox']:.modal-form-egreement-text
 input[type='checkbox']:focus-visible+.modal-form-egreement-text .modal-form-checkbox {
     outline: 2px solid #4D5AE5;
     outline-offset: 2px;
+    background-color: #404bbf;
+        border: none;
+        fill: #F4F4FD;
 }
 
 
