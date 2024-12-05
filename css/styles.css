@@ -625,7 +625,7 @@ a {
 .backdrop.is-open .modal {
     transform: translateX(-50%) translateY(-50%) scale(0.8);
     opacity: 1;
-    transition-delay: 300ms;
+    
 }
 
 
@@ -804,7 +804,7 @@ a {
     fill: transparent;
 }
 
-input[type='checkbox']:checked
+input[type='checkbox']:
 + .modal-form-egreement-text 
   .modal-form-checkbox {
     background-color: #404bbf;
@@ -819,7 +819,7 @@ input[type='checkbox']:checked
 input[type='checkbox']:focus-visible+.modal-form-egreement-text .modal-form-checkbox {
     outline: 2px solid #4D5AE5;
     outline-offset: 2px;
-    
+}
 
 
 .modal-form-egreement-link {
